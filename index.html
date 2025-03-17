@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Email Delivery . CLUB</title>
+    <!-- Favicon -->
+    <link rel="icon" href="https://cdn.iconscout.com/icon/free/png-256/free-email-icon-download-in-svg-png-gif-file-formats--envenlope-letter-mail-user-interface-pack-icons-83578.png" type="image/png">
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -70,23 +72,27 @@
             justify-content: center;
             gap: 30px;
             flex-wrap: wrap;
-            animation: move 5s linear infinite;
+            position: relative;
+            animation: rotateLogos 10s linear infinite;
         }
 
         .partner {
             width: 120px;
             height: 120px;
             background-color: #fff;
-            border-radius: 10px;
+            border-radius: 50%;
             overflow: hidden;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .partner img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+            width: 60%;
+            height: 60%;
+            object-fit: contain;
         }
 
         .partner:hover {
@@ -97,6 +103,7 @@
         .partner a {
             display: block;
             height: 100%;
+            width: 100%;
         }
 
         footer {
@@ -114,10 +121,9 @@
             100% { opacity: 1; }
         }
 
-        @keyframes move {
-            0% { transform: translateX(0); }
-            50% { transform: translateX(100px); }
-            100% { transform: translateX(0); }
+        @keyframes rotateLogos {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
         }
 
     </style>
@@ -126,7 +132,7 @@
 
 <header>
     <div class="logo">
-        <img src="https://via.placeholder.com/100" alt="Company Logo">
+        <img src="https://cdn.iconscout.com/icon/free/png-256/free-email-icon-download-in-svg-png-gif-file-formats--envenlope-letter-mail-user-interface-pack-icons-83578.png" alt="Company Logo">
     </div>
     <h1>Email Delivery . CLUB</h1>
 </header>
@@ -139,6 +145,11 @@
         <div class="partner">
             <a href="https://www.stockx.com" target="_blank">
                 <img src="https://play-lh.googleusercontent.com/N69vGy7o68mlkKKnVEzO6wIKlw9K0K0yOa9q_mSRnmnUc4pnHhQnECqwMXaVb9mz9g8" alt="StockX">
+            </a>
+        </div>
+        <div class="partner">
+            <a href="https://www.amazon.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon">
             </a>
         </div>
         <div class="partner">
